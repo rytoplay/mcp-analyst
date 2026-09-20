@@ -94,7 +94,7 @@ def run_select(sql: str) -> str:
             return "Error: incorrect SQL"
 
     if not sql.lower().startswith("select"):
-        return "Error: incorrect SQL"
+        return "Error: incorrect SQL structure"
 
     if ";" in sql:
         return "Error: sql injection error. No semicolons permitted."
